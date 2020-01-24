@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+	{% block main %}
+		
+		<div class="container-fluid">
+			<div class="row" >
+				<div class="col-sm-4" style="height:100vh;overflow: auto;background-color: rgba(255,255,255,0.6)">
+
+					<div style="margin-top: 200px;">
+						<center>
+							
+							<button onclick="open1('me')" class="link-btn btn-secondary">INTRO</button><br><br>
+							<button onclick="open1('experience')" class="link-btn btn-secondary">EXPERIENCE</button><br><br>	
+							<button onclick="open1('education')" class="link-btn btn-secondary">EDUCATION</button><br><br>
+							<button onclick="open1('projects')" class="link-btn btn-secondary">Projects</button><br><br>
+							<button onclick="open1('skills')" class="link-btn btn-secondary">Skills</button><br><br>
+							<button onclick="open1('awards')" class="link-btn btn-secondary">Awards</button><br><br>
+							<button onclick="open1('contact')" class="link-btn btn-secondary">Contact</button><br>
+						</center>
+
+						<script type="text/javascript">
+							function open1(id) {
+								console.log("heljsf");
+								document.getElementById("view-display").innerHTML = document.getElementById(id).innerHTML;
+							}
+						</script>
+
+
+					</div>
+				</div>
+				<div class="col-sm-8">
+
+
+
+					<div style="height:100vh;overflow: auto;background-color: rgba(255,255,255,0.4);font-family: 'Ubuntu', sans-serif;color: white;">
+						<img style="height:300px;width:300px;border-radius: 50%;float: right; margin: 50px;" src="/media/Capture.PNG"><br>
+						<div id="view-display" style="margin-top: 200px;margin-left: 50px;">
+							<div id="me">
+								<h1>Vishvajeet Thakur</h1>
+								<ul style="font-size: 20px;">
+									<li> I am a student pursuing B Tech. in Computer Science Engineering.</li>
+									<li> I have been working with python and web development since 2017.</li>
+									<li> I started up with HTML, CSS, JS as front-end languages and used SQL and PHP as backend languages and implemented it with LAMP configuration.</li>
+									<li> Finally, today I have switched to python frameworks like Django, FAST API, FLASK with various projects implements on those in my GIT profile.</li>
+									<a href="https://github.com/v10s">https://github.com/v10s</a>
+								</ul>
+								<br>
+							</div>
+						</div>
+				
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+				<div style="display: none;">
+
+					<div id="me">
+						<h1>Vishvajeet Thakur</h1>
+						<ul style="font-size: 20px;">
+							<li> I am a student pursuing B Tech. in Computer Science Engineering.</li>
+							<li> I have been working with python and web development since 2017.</li>
+							<li> I started up with HTML, CSS, JS as front-end languages and used SQL and PHP as backend languages and implemented it with LAMP configuration.</li>
+							<li> Finally, today I have switched to python frameworks like Django, FAST API, FLASK with various projects implements on those in my GIT profile.</li>
+							<a href="https://github.com/v10s">https://github.com/v10s</a>
+						</ul>
+						
+						
+						<br>
+					</div>
+
+					<div id="education">
+						<h1>Education</h1>
+						<h4>Mount Carmel School ,Palampur</h4>
+						<p style="font-size: 15px;">2017<br>Had my 10th and +2 from ICSE and ISC .</p>
+						<h4>University Institute of Information Technology(HP), Shimla — B.tech(CSE)</h4>
+						<a style="font-size: 15px;" href="http://uiit.ac.in/">http://uiit.ac.in/</a>
+						<p style="font-size: 15px;">2017 - 2021</p>
+					</div>
+
+					<div id="experience">
+						<h1>Experience</h1>
+						<h3>Mole Hunter— Founder & Developer</h3>
+						<p>August 2018 - PRESENT A simple mole hunting game .</p>
+						<a href="https://mole-hunter.000webhostapp.com/">https://mole-hunter.000webhostapp.com/</a>
+
+
+
+					</div>
+					
+					
+
+					<div id="projects">
+						<h1>Projects</h1>
+						<h3>Mole Hunter</h3>
+						<div style="font-size: 15px;">
+						<a href="https://github.com/v10s/mole">https://github.com/v10s/mole</a>
+						<p>A website running a mole hunter game.Created with HTML ,CSS , JS and Google material UI library is used as styling library</p>
+						<br>
+						<h3>Divcraft</h3>
+						<a href="https://github.com/v10s/div__craft">https://github.com/v10s/div__craft</a>
+						<p>A simple chatting app.Created with Django.</p>
+						<br>
+						<h3>Microblog</h3>
+						<a href="https://github.com/v10s/microblog">https://github.com/v10s/microblog</a>
+						<p>A blogging interface.Created with Flask.</p>
+						<br>
+						</div>
+					</div>
+
+					<div id="skills">
+						<h1>SKILLS</h1>
+						<ul style="font-size: 20px;">
+							<li>Python programming</li>
+							<li>Web development with html , css, js , php , apache .</li>
+							<li>Django, FAST API , Flask web framework</li>
+							<li>Experienced in using linux based machines like kali, ubuntu</li>
+						</ul>
+					</div>
+
+					<div id="awards">
+						<h1>AWARDS</h1>
+						<ul style="font-size: 20px;">
+							<li>Attained a 5-star badge in python from HackerRank<br><a href="https://www.hackerrank.com/vishvajeet_s">Link</a> </li>
+							<li>Certified in Responsive Web Design by Free Code Camp<br><a href="https://www.freecodecamp.org/certification/vishvajeet_thakur/responsive-web-design">Link</a> </li>
+							<li>Certified in Python by Udemy <br><a href="https://drive.google.com/file/d/1xPWUgGoqzH8HI_MxJF6N_-C8OdYqbCo7/view?usp=sharing">Link</a></li>
+							<li>Certified in Deep learning Prerequisites by Udemy.<br><a href="https://drive.google.com/file/d/1Hz2UnJrjOwcj_JCnVs1MNRdRb7PaLQ8C/view?usp=sharing">Link</a></li>
+						</ul>
+					</div>
+
+					<div id="contact">
+						<h1>Contact:</h1>
+						<h4>Phone no: <a href="tel:+91-898-888-4379">8988884379</a></h4>
+						<h4>Email Id: <a>vishvajeet10gfs@gmail.com</a></h4>
+					</div>
+				</div>
+
+
+	{% endblock %}
